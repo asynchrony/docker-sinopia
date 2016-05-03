@@ -9,6 +9,9 @@ web:
   # template: custom.hbs
 
 auth:
+  htpasswd:
+    file: ./htpasswd
+    max_users: 1
   ldap:
     type: ldap
     groupNameAttribute: 'cn'
