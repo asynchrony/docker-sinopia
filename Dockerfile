@@ -7,8 +7,8 @@ RUN npm install -g sinopia2@^2.0.2 sinopia-ldap@^0.5.1 \
  && apt-get update \
  && apt-get install -y curl --no-install-recommends \
  && rm -rf /var/lib/apt/lists/* \
- && curl -sSL https://github.com/kelseyhightower/confd/releases/download/v0.12.0-alpha3/confd-0.12.0-alpha3-linux-amd64 -o /usr/bin/confd \
- && echo "437524fe3334bd9d0424ed0ece265472e789d19e /usr/bin/confd" | sha1sum -c - \
+ && curl -sSL https://github.com/kelseyhightower/confd/releases/download/v0.11.0/confd-0.11.0-linux-amd64 -o /usr/bin/confd \
+ && echo "dd4479abccb24564827dcf14fcb73ccc5bba8aeb /usr/bin/confd" | sha1sum -c - \
  && chmod +x /usr/bin/confd \
  && apt-get purge -y --auto-remove curl
 
