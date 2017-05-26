@@ -2,4 +2,4 @@
 set -e
 
 confd -onetime -backend env
-exec sinopia
+exec verdaccio
