@@ -1,6 +1,6 @@
 [template]
 src = "config.yaml.tmpl"
-dest = "/root/verdaccio/config.yaml"
+dest = "/root/sinopia/config.yaml"
 keys = [
     "/sinopia"
 ]
