@@ -2,7 +2,7 @@ FROM node:4-slim
 
 WORKDIR /root
 
-RUN npm install -g sinopia2@^2.0.2 sinopia-ldap@^0.5.1 \
+RUN npm install -g verdaccio@2.1.7 verdaccio-ldap@1.1.0 \
  && mkdir /root/sinopia \
  && apt-get update \
  && apt-get install -y curl --no-install-recommends \
